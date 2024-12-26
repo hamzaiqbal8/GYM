@@ -1235,8 +1235,8 @@
       </div>
     </div>
 
-    <div class="section-roof">
-      <div class="image-container">
+    <div class="section-roof slider-with-bg">
+      <div class="slider-with-bg__wrapper">
         <div class="bg-image">
           <img
             src="//freakathlete.co/cdn/shop/files/logo-outline.svg?v=1708592348&amp;width=1020"
@@ -1696,24 +1696,27 @@
       });
 
       let Slider = new Swiper(".images-cards", {
-        slidesPerView:'auto',
-        spaceBetween: 20,
+        slidesPerView: 5,
+        spaceBetween: 1,
+        speed: 2000,
+        direction: 'horizontal',
+        freeMode: true,
         autoplay: {
-          delay: 1400,
+          delay: 0,
         },
         loop: true,
         breakpoints: {
           900: {
-            slidesPerView: 'auto',
+            slidesPerView: 5,
             spaceBetween: 20,
           },
           600: {
-            slidesPerView: 'auto',
-            spaceBetween: 10,
+            slidesPerView: 2,
+            spaceBetween: 20,
           },
           300: {
-            slidesPerView: 'auto',
-            spaceBetween: 10,
+            slidesPerView: 1,
+            spaceBetween: 20,
           },
         },
       });

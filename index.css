@@ -828,13 +828,18 @@ h4 {
 
 }
 
-.image-container {
+.slider-with-bg__wrapper {
     position: relative;
+    display: grid;
+    gap: 1rem;
     padding: 3rem;
-    height: 800px;
+    /* height: 800px; */
 }
 
 .bg-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
     display: block;
@@ -843,10 +848,10 @@ h4 {
 }
 
 .image-text {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: static;
+    /* top: 10%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -857,7 +862,6 @@ h4 {
 .images-cards {
     display: flex;
     position: relative;
-    top: -120px;
     overflow: hidden;
 }
 
@@ -871,8 +875,8 @@ h4 {
 }
 
 .image-card img {
-    width: 250px;
-    height: 350px;
+   width: 350px ;
+   height:400px;
     border-radius: 0.75rem;
     display: block;
     object-fit: cover;
@@ -900,8 +904,6 @@ h4 {
 }
 
 .after-image-text {
-    position: absolute;
-    top: 499px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1098,7 +1100,7 @@ h4 {
     }
 
     .section-roof {
-        height: 800px;
+        /* height: 800px; */
     }
 
     .content-area h2 {
@@ -1241,8 +1243,6 @@ h4 {
 
 
     .after-image-text {
-        top: 490px;
-        left: 100px;
         text-align: center;
         display: flex;
         gap: 0.8rem;
@@ -1273,6 +1273,13 @@ h4 {
         width: 230px !important;
 
     }
+    .image-card{
+        width: 300px !important;
+        
+    }
+    .section-roof{
+        padding: 2rem 0;
+    }
 }
 
 @media screen and (max-width:485px) {
@@ -1297,8 +1304,6 @@ h4 {
     }
 
     .after-image-text {
-        top: 390px;
-        left: 60px;
         text-align: center;
         display: flex;
         gap: 0.8rem;
@@ -1394,7 +1399,7 @@ h4 {
 
     }
 
-    .image-container {
+    .slider-with-bg__wrapper {
         position: relative;
         padding: 3rem;
 
@@ -1409,10 +1414,7 @@ h4 {
     }
 
     .image-text {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: static;
         color: white;
         font-size: 24px;
         font-weight: bold;
@@ -1423,7 +1425,6 @@ h4 {
     .images-cards {
         display: flex;
         position: relative;
-        top: -380px;
         overflow: hidden;
     }
 
@@ -1466,9 +1467,6 @@ h4 {
     }
 
     .after-image-text {
-        position: absolute;
-        top: 610px;
-        left: 410px;
         display: flex;
         flex-direction: column;
         align-items: center;
